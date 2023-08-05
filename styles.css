@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    color: gold;
+}
+
+h2 {
+    border-top: 3px solid;
+    border-bottom: 1px solid;
+    color: goldenrod;
+}
+
+h6 {
+    color: goldenrod;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+a {
+    color: goldenrod;
+}
+
+.topnav {
+    margin-top: -8px;
+    margin-left: -7px;
+    margin-right: -7px;
+    padding: 10px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbutton {
+    padding: 11px;
+    border: 2px solid
+}
+
+.active {
+    background-color: rgb(37, 37, 37);
+}
+
+.navbutton:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+code {
+    background-color: rgb(94, 94, 94)
+}
+
+footer {
+    margin-left: -7px;
+    margin-right: -8px;
+    margin-bottom: -11px;
+    background-color: rgb(78, 78, 78);
+}
