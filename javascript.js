@@ -1,25 +1,12 @@
 import axios from 'axios';
 
+const paragraph = document.querySelector(".dynamicData");
+let openPrice;
+let closePrice;
 
-
-const selectEle = document.querySelector("select");
-const response = document.querySelector(".guessResponse");
-
-selectEle.addEventListener("change",setResponse);
-
-function setResponse() {
-    const userChoice = selectEle.value;
-    switch(userChoice) {
-        case "y":
-            response.textContent = "You are a believer";
-            break;
-        case "n":
-            response.textContent = "You are a doomer";
-            break;
-        default:
-            response.textContent = ""
-            break;
-    }
-
-}
-
+axios.get("https://raw.githubusercontent.com/Codrius/AdVUEntures/main/stockdata.json")
+    .then(stockjson => {
+        const data = stockjson.data;
+        paragraph.textContent = data
+    })
+    .catch(error => {console.error(error)})
