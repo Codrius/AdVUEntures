@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Learn2WoW - Macros</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a class="navbutton home" href="index.html">Home</a>
+        <a class="navbutton performance" href="performance.html">Performance</a>
+        <a class="navbutton raiding" href="raiding.html">Raiding</a>
+        <a class="navbutton mythicp" href="mythicp.html">Mythic+</a>
+        <a class="navbutton active" href="macros.html">Macros</a>
+        <a class="navbutton discords" href="discords.html">Discords</a>
+      </div>
+    </header>
+
+    <main>
+    <h1>MACRO INFORMATION</h1>
+    <p>I am willing to help any member of Torrent with macro related questions if you send me a DM on Discord.  If you want to copy/adjust some of my macros for yourself, I'll leave them here for you so you can.
+    <br><br>
+    First off: My kick macro.
+    <br><br>
+    <code>
+      #showtooltip<br>
+      /focus [mod:shift]<br>
+      /use [mod:ctrl,@focus][nomod:shift,@mouseover,exists][nomod:shift]Rebuke
+    </code>
+    <br><br>
+    Whenever I hit shift-kick, instead of kicking, my macro will set my current target as a focus.  My kick and all of my CC abilities come with a "Cast at focus" modifier on them so that whenever I hit ctrl-ability, I will cast it at my focus instead of at my target.  I explain why I do this in the <a href="mythicp.html" target="_blank" rel="noopener noreferrer">Mythic+</a> section.
+    <br><br>
+    Second: One of my basic CC macros.<br><br>
+    <code>
+      #showtooltip<br>
+      /use [mod:ctrl,@focus][@mouseover,exists][]Hammer of Justice
+    </code>
+    <br><br>
+    Quite simple.  I hit ctrl-HoJ, casts it at focus.  Otherwise, at my mouseover.  Otherwise, at my target.
+    <br><br>
+    Lastly: One of my generic healing macros.  Any time I play ANYTHING with a heal (or dispel), I set this up for pretty much every single one.
+    <br><br>
+    <code>
+     #showtooltip<br>
+     /use [mod:ctrl,@player][@mouseover,exists][]Lay on Hands
+    </code>
+    <br><br>
+    When I hit ctrl-heal, it targets myself.  Otherwise, my mouseover.  Otherwise, my target.  Being able to cast your heals at mouseover (This works on party frames) cuts an entire step out of healing whoever you're trying to heal.  I guarantee you at some point someone will die, or be saved by milliseconds, and doing this will shift that millisecond threshold a few more in your favor.</p>
+    </main>
+
+    <footer>
+      <address>
+        <h6>Contact me:</h6>
+        <p>ThisIsOnly@nExample.com</p>
+      </address>
+    </footer>
+  </body>
+</html>
