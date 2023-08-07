@@ -1,3 +1,5 @@
+
+
 const paragraph = document.querySelector(".dynamicData");
 
 axios.get("https://raw.githubusercontent.com/Codrius/AdVUEntures/main/stockdata.json")
@@ -5,7 +7,7 @@ axios.get("https://raw.githubusercontent.com/Codrius/AdVUEntures/main/stockdata.
         const stockdata = stockjson.data;
         const openPrice = stockdata["Time Series (Daily)"]["2023-08-04"]["1. open"];
         const closePrice = stockdata["Time Series (Daily)"]["2023-08-04"]["4. close"];
-        const stockChange = parseFloat(openPrice) - parseFloat(closePrice);
+        const stockChange = (parseFloat(openPrice) - parseFloat(closePrice)).toFixed(2);
         
         if (stockChange>0) {
             paragraph.textContent = `If you look at the stock values, the stock increased by $${stockChange} yesterday.  This is indicative of how the game is absolutely BOOMING right now, and is in the best state it has ever been.`;
